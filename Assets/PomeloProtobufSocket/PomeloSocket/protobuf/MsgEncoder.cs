@@ -166,8 +166,6 @@ namespace Pomelo.Protobuf
 					this.writeUInt32(buffer, ref offset, value);
 					break;
 				case "int32":
-					this.writeInt32(buffer, ref offset, value);
-					break;
 				case "sInt32":
 					this.writeSInt32(buffer, ref offset, value);
 					break;
@@ -227,10 +225,6 @@ namespace Pomelo.Protobuf
 			offset = writeBytes(buffer, offset, Encoder.encodeUInt32(value.ToString()));
 		}
 
-		//Encode Int32
-		private void writeInt32(byte [] buffer, ref int offset, object value) {
-			offset = writeBytes(buffer, offset, Encoder.encodeInt32(value.ToString()));
-		}
 		//Encode Int32
 		private void writeSInt32(byte [] buffer, ref int offset, object value) {
 			offset = writeBytes(buffer, offset, Encoder.encodeSInt32(value.ToString()));

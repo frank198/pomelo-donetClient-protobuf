@@ -120,7 +120,6 @@ namespace Pomelo.Protobuf
 				case "uInt32":
 					return Decoder.decodeUInt32(this.getBytes());
 				case "int32":
-					return Decoder.decodeInt32 (this.getBytes());
 				case "sInt32":
 					return Decoder.decodeSInt32(this.getBytes());
 				case "float":

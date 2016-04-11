@@ -32,16 +32,6 @@ namespace Pomelo.Protobuf
 		/// <summary>
 		/// Decodes the SInt32.
 		/// </summary>
-		public static int decodeInt32(byte[] bytes){
-			uint n = decodeUInt32(bytes);
-			//int flag = ((n%2) == 1) ? -1 : 1;
-			//int result = Convert.ToInt32(((n%2 + n)/2) * flag);
-			int result = Convert.ToInt32(n);
-			return result;
-		}
-		/// <summary>
-		/// Decodes the SInt32.
-		/// </summary>
 		public static int decodeSInt32(byte[] bytes){
 			uint n = decodeUInt32(bytes);
 			int flag = ((n%2) == 1) ? -1 : 1;

@@ -40,25 +40,7 @@ namespace Pomelo.Protobuf
 		public static byte [] encodeSInt32(string n){
 			return encodeSInt32(Convert.ToInt32(n));
 		}
-		//Encode SInt32
-		public static byte [] encodeInt32(string n){
-			return encodeInt32(Convert.ToInt32(n));
-		}
 
-
-		/// <summary>
-		/// Encodes the SInt32.
-		/// </summary>
-		/// <returns>
-		/// byte []
-		/// </returns>
-		/// <param name='n'>
-		/// int
-		/// </param>
-		public static byte [] encodeInt32(int n){
-			//UInt32 num  = (uint)(n < 0 ? (Math.Abs(n) * 2 - 1) : n);
-			return encodeUInt32((uint)n);
-		}
 		/// <summary>
 		/// Encodes the SInt32.
 		/// </summary>
